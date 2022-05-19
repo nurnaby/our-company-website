@@ -7,6 +7,53 @@
 
 /* common css  */
 
+
+/* input {
+    padding: 8px 20px;
+    background: linear-gradient(90deg, #8392fd 0%, #63bcfb 100%);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+input:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0.08);
+} */
+
+.hedding {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hedding p {
+    font-size: 15px;
+    color: #777777;
+}
+
+.hedding h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.spantext span {
+    background: orange;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.section-header h1 {}
+
+.section-header .section-header-para {
+    font-size: 20px;
+    color: gray;
+}
+
+
+/* common css  */
+
 p {
     font-family: 'Roboto', sans-serif;
 }
@@ -55,33 +102,6 @@ body .btn-primary:hover::after {
 
 
 /* nav section start */
-
-
-/* dropdon menu css  */
-
-ul.navbar-nav li {
-    position: relative;
-}
-
-ul.navbar-nav li ul {
-    position: absolute;
-    width: 250px;
-    left: 0;
-    top: 140%;
-    background-color: #fafafa;
-    list-style: none;
-    padding: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .4s ease-in-out;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-}
-
-ul.navbar-nav li:hover ul {
-    opacity: 1;
-    visibility: visible;
-    top: 125%;
-}
 
 ul.navbar-nav li ul li {}
 
@@ -170,4 +190,184 @@ ul.navbar-nav li a {
 
 .slider-caption .btn {
     padding: 15px;
+}
+
+
+/* service section start  */
+
+
+/* service header  */
+
+section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section .title span {
+    color: #0E2431;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #4070f4;
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* service header end  */
+
+.services .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+    background: #4070f4;
+    color: #fff;
+}
+
+.services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    background: #4070f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+    background-color: #fff;
+    color: #4070f4;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+    color: #0E2431;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+    color: #fff;
+}
+
+
+/* service section end  */
+
+
+/* teams section start */
+
+.team {
+    background-color: #F0F8FF;
+}
+
+.team img {
+    border-radius: 10px;
+    box-shadow: 15px 13px 20px -8px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 15px 13px 20px -8px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 15px 13px 20px -8px rgba(0, 0, 0, 0.36);
+}
+
+.team h5 {
+    color: #000;
+}
+
+.team p {
+    color: rgb(20, 17, 17);
+    font-weight: normal;
+}
+
+small {
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.fa-facebook {
+    color: #300df1;
+    font-size: 21px;
+    padding: 0 10px;
+}
+
+.fa-twitter {
+    color: #0ad4f8;
+    font-size: 21px;
+    padding: 0 10px;
+}
+
+.fa-pinterest {
+    color: #fd9308;
+    font-size: 21px;
+    padding: 0 10px;
+}
+
+
+/* teams section end */
+
+
+/* Contact Me CSS */
+
+.contact {
+    background: #fff;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact .text {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.btn1 {
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+    transition: .4s;
+}
+
+.btn1:hover {
+    background-color: #f9ca24;
 }
